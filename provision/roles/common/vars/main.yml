@@ -1,6 +1,7 @@
 ---
 common_packages:
   - name: apt-file
+  - name: git
   - name: vim-nox
   - name: curl
   - name: fish
