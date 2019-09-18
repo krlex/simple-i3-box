@@ -1,0 +1,9 @@
+---
+network_packages:
+  - name: firmware-iwlwifi
+  - name: minicom
+  - name: network-manager-gnome
+  - name: openntpd
+  - name: sshpass
+  - name: tcpdump
+  - name: wget

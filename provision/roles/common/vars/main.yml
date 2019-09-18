@@ -1,0 +1,11 @@
+---
+common_packages:
+  - name: apt-file
+  - name: vim-nox
+  - name: curl
+  - name: fish
+  - name: gpm
+  - name: hplip
+  - name: htop
+  - name: inotify-tools
+  - name: iptables
