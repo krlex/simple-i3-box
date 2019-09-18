@@ -13,7 +13,6 @@
   git:
     repo: "{{ item.repo }}"
     dest: "~{{ user }}/repos/{{ item.dest }}"
-    accept_hostkey: yes
     update: yes
     recursive: no
 
