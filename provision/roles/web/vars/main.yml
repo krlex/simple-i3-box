@@ -6,9 +6,9 @@ debian_web:
   - name: browser-plugin-freshplayer-pepperflash
   - name: rtorrent
 
-debian_web:
-  - name: chromium
+ubuntu_web:
+  - name: chromium-browser
   - name: elinks
-  - name: firefox-esr
+  - name: firefox
   - name: browser-plugin-freshplayer-pepperflash
   - name: rtorrent

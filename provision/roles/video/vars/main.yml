@@ -1,3 +1,6 @@
 ---
-video_packages:
+debian_video:
+  - name: mpv
+
+ubuntu_video:
   - name: mpv

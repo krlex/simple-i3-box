@@ -11,7 +11,7 @@
     path: /etc/apt/sources.list
     state: absent
 
-- name: configure debian sources
+- name: configure ubuntu sources
   become: yes
   template:
     src: "roles/common/templates/ubuntu.list.j2"
