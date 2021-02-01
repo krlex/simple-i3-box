@@ -1,5 +1,17 @@
 ---
-gui_packages:
+debian_gui:
+  - name: arandr
+  - name: evince
+  - name: i3
+  - name: rxvt-unicode-256color
+  - name: slim
+  - name: unclutter
+  - name: xautolock
+  - name: xinit
+  - name: xserver-xorg
+  - name: rofi
+
+ubuntu_gui:
   - name: arandr
   - name: evince
   - name: i3

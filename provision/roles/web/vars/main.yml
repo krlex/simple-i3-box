@@ -1,7 +1,14 @@
 ---
-web_packages:
+debian_web:
   - name: chromium
   - name: elinks
   - name: firefox-esr
+  - name: browser-plugin-freshplayer-pepperflash
+  - name: rtorrent
+
+ubuntu_web:
+  - name: chromium-browser
+  - name: elinks
+  - name: firefox
   - name: browser-plugin-freshplayer-pepperflash
   - name: rtorrent

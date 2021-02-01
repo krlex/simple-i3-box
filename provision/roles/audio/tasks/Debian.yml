@@ -1,0 +1,22 @@
+---
+- name: install audio packages
+  become: yes
+  with_items: "{{ debian_audio }}"
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest
+
+- name: create rc.local
+  become: yes
+  file:
+    path: /etc/rc.local
+    state: touch
+    mode: "u=rw,g=r,o=r"
+
+- name: setup rtc frequency
+  become: yes
+  lineinfile:
+    dest: /etc/rc.local
+    insertbefore: "^exit 0"
+    regexp: "^echo 3072"
+    line: "echo 3072 >/sys/class/rtc/rtc0/max_user_freq"

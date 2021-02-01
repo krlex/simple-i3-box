@@ -1,0 +1,15 @@
+---
+- name: install network packages
+  become: yes
+  with_items: "{{ ubuntu_network }}"
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest
+
+- name: configure network interfaces
+  become: yes
+  template:
+    src: interfaces.j2
+    dest: /etc/network/interfaces
+  notify:
+    - restart network manager

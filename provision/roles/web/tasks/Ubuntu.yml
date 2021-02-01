@@ -1,0 +1,7 @@
+---
+- name: install web packages
+  become: yes
+  with_items: "{{ ubuntu_web }}"
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest
