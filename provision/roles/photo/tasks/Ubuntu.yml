@@ -1,0 +1,7 @@
+---
+- name: install photo packages
+  become: yes
+  with_items: "{{ ubuntu_photo }}"
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest

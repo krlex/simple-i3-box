@@ -1,6 +1,6 @@
 ---
 
-audio_packages:
+debian_audio:
   - name: audacious
   - name: alsa-tools
   - name: alsa-tools-gui
@@ -10,3 +10,14 @@ audio_packages:
   - name: normalize-audio
   - name: python3-xdg
   - name: sweep
+
+ubuntu_audio:
+    - name: audacious
+    - name: alsa-tools
+    - name: alsa-tools-gui
+    - name: alsa-utils
+    - name: dbus-x11
+    - name: ncmpcpp
+    - name: normalize-audio
+    - name: python3-xdg
+    - name: sweep

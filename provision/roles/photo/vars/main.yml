@@ -1,5 +1,11 @@
 ---
-photo_packages:
+debian_photo:
+  - name: geeqie
+  - name: gimp
+  - name: inkscape
+  - name: scrot
+
+ubuntu_photo:
   - name: geeqie
   - name: gimp
   - name: inkscape

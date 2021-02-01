@@ -1,5 +1,16 @@
 ---
-util_packages:
+debian_util:
+  - name: fakeroot
+  - name: pv
+  - name: pwgen
+  - name: silversearcher-ag
+  - name: strace
+  - name: sysstat
+  - name: unp
+  - name: unzip
+  - name: wajig
+
+ubuntu_util:
   - name: fakeroot
   - name: pv
   - name: pwgen
